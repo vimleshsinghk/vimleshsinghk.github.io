@@ -9,9 +9,9 @@ myApp.controller('myController', function($scope){
 		birthDate:new Date(1980,04,17),
 		gender: "male",
 		work: "Web Developer",
-		projects:["images/ATH.jpg"],
+		projects: ["images/ATH.jpg"],
 		avatar: "images/vimlesh.jpg",
-		social: "https://www.linkedin.com"
+		social: [linkedin={link: "https://www.linkedin.com", icon: "images/linkedin.png"}]
 	};
 	$scope.person = person;
 	$scope.mycolor = "rgba(123,15,255,1.0)";

@@ -51,7 +51,7 @@
       <p class="h1">Thinking of creating a website for your business get in touch...!!!</p>
         <p>Contact Email : <a target="_top" style="color: rgb(51, 51, 51);" href="mailto:{{person.email}}">{{person.email}}</a></p>
         <p>Contact Phone : <a href="tel:{{person.mobile}}">{{person.mobile}}</a></p>
-        <p>Connect on : <a target="_blank" href="{{person.social}}"><img style="width: 25px; height: 25px; margin-bottom: -5px;" ng-src= {{person.avatar}} /></a></p>
+        <p>Connect on : <a target="_blank" href="{{person.social[0].link}}"><img ng-src= {{person.social[0].icon}} /><img style="width: 25px; height: 25px;" ng-src= {{person.avatar}} /></a></p>
       </div>
     </div>
     <div id="clear"></div><br/><hr/>
