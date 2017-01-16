@@ -57,6 +57,7 @@
     background-color: red;
   } 
   @media screen and (max-width: 480px) {
+    font-size: 0.8em;
      #myCarousel {
         display: none;
     }
