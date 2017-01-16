@@ -5,7 +5,7 @@ myApp.controller('myController', function($scope){
 		lastName: "Singh",
 		email: "vimleshsinghk@googlemail.com",
 		mobile: "+44-7720271194",
-		webSite: "http://www.vimleshsinghk.com",
+		webSite: "http://www.vimlesh.co.uk",
 		birthDate:new Date(1980,04,17),
 		gender: "male",
 		work: "Web Developer",
