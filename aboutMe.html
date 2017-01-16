@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="myController" >
+  <head>
+    <title> Vimlesh Singh K </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script/angular.js"></script>
+    <script src="script/jQuery.js"></script>
+    <script src="script/script.js"></script>
+    <link rel="shortcut icon" type="image" href={{person.avatar}}/>
+  </head>
+  <body id="myPage" onload="changeBgColor()">
+    <label for="bg-color">Choose the Background color</label>
+    <input id="bg-color" type="color" value="#9CE7D3" onchange="selectedColor()" />
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand neo-effect" href="#">{{person.firstName}} {{person.lastName}}</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li class="active"><a href="#">ABOUT ME</a></li>
+            <li><a href="contactMe.html">CONTACT ME</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="contanier">
+      <div class="textcontent">
+        <div id="text">
+          <p class="h1">Profile</p>
+          <p>As a Frontend Developer, having more than 1 year experience in Frontend development using Techonolgies like HTML, CSS, JAVASCRIPT
+          Good experience in SDLC (Analysis, Design, Coding, Testing &amp; Maintenance)  of internet web applications using  Web technologies.</p>
+          <p class="h1">Technical Skills</p>
+          <p>•   Web – HTML5, CSS3, JavaScript, JQuery, AngularJS</p>
+          <p>•   .NET – Classic ASP, VB.NET, ASP.NET MVC 4</p>
+          <p>•   CMS – Metronic, Drupal, WordPress</p>
+          <p>•   IDE Tools – Visual Studio, .NET Visual Studio, Adobe Dreamweaver, TextPad</p>
+          <p>•   Operating System –Windows 95/ 2000/ Vista/ 2008</p>
+          <p>•   Standards - HTML4.01, XML 1.0/1.1</p>
+          <p class="h1">Others</p>
+          <p>•   Ability to work as a team member and independently.</p>
+          <p>•   Ability to perform in a fast-paced agile environment.</p>
+          <p>•   Ability to manage and deliver on multiple concurrent project tasks. </p>
+          <p>•   Strong analytical and problem solving with excellent verbal communication and client interacting skills.</p>
+          <p class="h1">Qualifications (Academic/Professional)</p>
+          <p>•   Advance Diploma in Computer Networks</p>
+          <p>•   Certificate in Web Computing (HTML , Microsoft SQL Server , Java Programming)</p>
+          <p>•   Bachelors of Engineering (Electrical)</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p> Made By <a href="index.html"> Vimlesh Singh K </a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+ body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #000;
+      background-color: rgba(156,231,211,1.0);
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      margin: auto;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 18px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav :hover {
+      //color: #1abc9c !important;
+      front-size:18px !important;
+      color: white !important;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  .imp-color {
+    color:red !important;
+  }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto; 
+  }
+  .carousel-indicators li {
+    border-color: red;
+  }
+  .carousel-indicators .active {
+    background-color: red;
+  } 
+  @media screen and (max-width: 480px) {
+     #myCarousel {
+        display: none;
+    }
+  }
+  .textcontent{
+    background: rgba(200,200,200,0.5);
+    border: 2px solid grey;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 5px grey;
+    margin: 3%;
+    padding: 5%; 
+  }
+  .textcontent:hover {
+    background: rgba(220,220,220,0.7);
+    box-shadow: 3px 3px 10px rgba(0,0,255,1),0px 0px 25px rgba(0,0,255,1);
+  }
+  .textcontent p {
+    font-size: 22px;
+  }
+  .round-border {
+    border: 1px solid grey;
+    border-radius: 10%;
+    box-shadow: 5px 5px 7px 7px grey; 
+  }
+  .crop {
+    height: auto;
+    over-flow: hidden;
+    padding: 1.8%;
+  }
+  .crop img {
+    height: auto;
+    width: 100%;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-shadow {
+    text-shadow: 4px 4px 4px grey;
+  }
+  .neo-effect {
+    color: white !important;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  img:hover {
+    box-shadow: 3px 3px 10px rgba(0,0,255,1),0px 0px 25px rgba(0,0,255,1);
+  }
+  .grad {
+  background: rgba(255,0,0,0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0.5),rgba(255,0,0,0.7),rgba(255,0,0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,0,0,0.5),rgba(255,0,0,0.7),rgba(255,0,0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,0,0,0.5),rgba(255,0,0,0.7),rgba(255,0,0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right,rgba(255,0,0,0.5),rgba(255,0,0,0.7),rgba(255,0,0,1)); /*Standard*/
+}
+  
