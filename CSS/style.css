@@ -7,7 +7,7 @@
   }
   p {
     font-size: 14pt;
-    overflow: hidden;
+    word-wrap: break-word;
   }
   .margin {margin-bottom: 45px;}
   .bg-1 {
