@@ -3,9 +3,12 @@
       line-height: 1.8;
       color: #000;
       background-color: rgba(156,231,211,1.0);
-      overflow: hidden;
+      
   }
-  p {font-size: 14pt;}
+  p {
+    font-size: 14pt;
+    overflow: hidden;
+  }
   .margin {margin-bottom: 45px;}
   .bg-1 {
       background-color: #1abc9c; /* Green */
