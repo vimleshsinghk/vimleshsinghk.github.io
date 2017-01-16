@@ -60,11 +60,6 @@
   .carousel-indicators .active {
     background-color: red;
   } 
-  @media screen and (max-width: 360px) {
-     #myCarousel {
-        display: none;
-    }
-  }
   .textcontent{
     background: rgba(200,200,200,0.5);
     border: 2px solid grey;
