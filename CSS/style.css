@@ -3,8 +3,9 @@
       line-height: 1.8;
       color: #000;
       background-color: rgba(156,231,211,1.0);
+      overflow: auto;
   }
-  p {font-size: 16px;}
+  p {font-size: 14pt;}
   .margin {margin-bottom: 45px;}
   .bg-1 {
       background-color: #1abc9c; /* Green */
@@ -56,8 +57,7 @@
   .carousel-indicators .active {
     background-color: red;
   } 
-  @media screen and (max-width: 480px) {
-    font-size: 0.8em;
+  @media screen and (max-width: 360px) {
      #myCarousel {
         display: none;
     }
