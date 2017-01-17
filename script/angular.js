@@ -11,7 +11,8 @@ myApp.controller('myController', function($scope){
 		work: "Web Developer",
 		projects: ["images/ATH.jpg"],
 		avatar: "images/vimlesh.jpg",
-		social: [linkedin={link: "https://www.linkedin.com", icon: "images/linkedin.png"}]
+		social: [linkedin={link: "https://www.linkedin.com/in/vimlesh-singh-9b501b137",
+		 icon: "images/linkedin.png"}]
 	};
 	$scope.person = person;
 	$scope.mycolor = "rgba(123,15,255,1.0)";
