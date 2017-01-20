@@ -19,11 +19,13 @@
     <script src="script/jQuery.js"></script>
     <script src="script/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image" href={{person.avatar}}/>
+    <link rel="shortcut icon" type="image" href={{person.avatar}}>
   </head>
   <body id="myPage" onload="changeBgColor()">
-    <label for="bg-color">Choose the Background color</label>
-    <input id="bg-color" type="color" value="#9CE7D3" onchange="selectedColor()" />
+    <div id="background-control">
+      <label for="bg-color">Choose the Background color</label>
+      <input id="bg-color" type="color" value="#9CE7D3" onchange="selectedColor()" /> 
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-default">
       <div class="container">
@@ -45,31 +47,34 @@
         </div>
       </div>
     </nav>
-    <div class="contanier">
-      <div class="textcontent">
-        <div id="text">
-          <p class="h1">Profile</p>
-          <p>As a Frontend Developer, having more than 1 year experience in Frontend development using Techonolgies like HTML, CSS, JAVASCRIPT
-          Good experience in SDLC (Analysis, Design, Coding, Testing &amp; Maintenance)  of internet web applications using  Web technologies.</p>
-          <p class="h1">Technical Skills</p>
-          <p>•   Web – HTML5, CSS3, JavaScript, JQuery, AngularJS</p>
-          <p>•   .NET – Classic ASP, VB.NET, ASP.NET MVC 4</p>
-          <p>•   CMS – Metronic, Drupal, WordPress</p>
-          <p>•   IDE Tools – Visual Studio, .NET Visual Studio, Adobe Dreamweaver, TextPad</p>
-          <p>•   Operating System –Windows 95/ 2000/ Vista/ 2008</p>
-          <p>•   Standards - HTML4.01, XML 1.0/1.1</p>
-          <p class="h1">Others</p>
-          <p>•   Ability to work as a team member and independently.</p>
-          <p>•   Ability to perform in a fast-paced agile environment.</p>
-          <p>•   Ability to manage and deliver on multiple concurrent project tasks. </p>
-          <p>•   Strong analytical and problem solving with excellent verbal communication and client interacting skills.</p>
-          <p class="h1">Qualifications (Academic/Professional)</p>
-          <p>•   Advance Diploma in Computer Networks</p>
-          <p>•   Certificate in Web Computing (HTML , Microsoft SQL Server , Java Programming)</p>
-          <p>•   Bachelors of Engineering (Electrical)</p>
+    <!-- main -->
+    <main>
+      <div class="contanier">
+        <div class="textcontent">
+          <div id="text">
+            <p class="h1 text-heading">Profile</p>
+            <p>As a Frontend Developer, having more than 1 year experience in Frontend development using Techonolgies like HTML, CSS, JAVASCRIPT
+            Good experience in SDLC (Analysis, Design, Coding, Testing &amp; Maintenance)  of internet web applications using  Web technologies.</p>
+            <p class="h1 text-heading">Technical Skills</p>
+            <p>•   Web – HTML5, CSS3, JavaScript, JQuery, AngularJS</p>
+            <p>•   .NET – Classic ASP, VB.NET, ASP.NET MVC 4</p>
+            <p>•   CMS – Metronic, Drupal, WordPress</p>
+            <p>•   IDE Tools – Visual Studio, .NET Visual Studio, Adobe Dreamweaver, TextPad</p>
+            <p>•   Operating System –Windows 95/ 2000/ Vista/ 2008</p>
+            <p>•   Standards - HTML4.01, XML 1.0/1.1</p>
+            <p class="h1 text-heading">Others</p>
+            <p>•   Ability to work as a team member and independently.</p>
+            <p>•   Ability to perform in a fast-paced agile environment.</p>
+            <p>•   Ability to manage and deliver on multiple concurrent project tasks. </p>
+            <p>•   Strong analytical and problem solving with excellent verbal communication and client interacting skills.</p>
+            <p class="h1 text-heading">Qualifications (Academic/Professional)</p>
+            <p>•   Advance Diploma in Computer Networks</p>
+            <p>•   Certificate in Web Computing (HTML , Microsoft SQL Server , Java Programming)</p>
+            <p>•   Bachelors of Engineering (Electrical)</p>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center">
       <a href="#myPage" title="To Top">

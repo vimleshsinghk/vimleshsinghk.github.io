@@ -19,11 +19,13 @@
     <script src="script/jQuery.js"></script>
     <script src="script/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image" href={{person.avatar}}/>
+    <link rel="shortcut icon" type="image" href={{person.avatar}}>
   </head>
   <body id="myPage" onload="changeBgColor()">
-    <label for="bg-color">Choose the Background color</label>
-    <input id="bg-color" type="color" value="#9CE7D3" onchange="selectedColor()" /> 
+    <div id="background-control">
+      <label for="bg-color">Choose the Background color</label>
+      <input id="bg-color" type="color" value="#9CE7D3" onchange="selectedColor()" /> 
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-default">
       <div class="container">
@@ -47,78 +49,74 @@
     </nav>
     <!-- main -->
     <main>
-    <section class="textcontent">
-      <div id="text">
-        <p>I'm Vimlesh, a Front End Web Developer living in London...
+      <section class="textcontent">
+        <div id="text">
+          <p>I'm Vimlesh, a Front End Web Developer living in London...
           </p>
-            <p>With over 1 year of experience, I have been part of the design and development projects for few exceptional companies during this period.
-            </p>
-            <p>I am currently seeking a role as a <i style="color:{{mycolor}}">Front End Web Developer</i>.
-            </p>
-            <strong>
-            <div id="quotes">
+          <p>With over 1 year of experience, I have been part of the design and development projects for few exceptional companies during this period.
+          </p>
+          <p>I am currently seeking a role as a <i style="color:{{mycolor}}">Front End Web Developer</i>.
+          </p>
+          <div id="quotes">
             <p style="color:{{mycolor}}" class="neo-effect">"Everything should be made as simple as possible, but no simpler."
             </p>
             <p style="color:{{mycolor}}" class="neo-effect">"To accomplish great things we must dream as well as act."
             </p>
-            </div>
-            </strong>
-            <span>
-              <a href="aboutMe.html">More about me</a>
-            </span>
-            <br/>
           </div>
-        </section>
-        <div id="clear">
-        </div>
-        <hr/>
-        <!-- Image Container (Grid) -->
-        <div class="container-fluid">
-          <h2 class="margin text-center text-shadow neo-effect">SOME OF MY WORKS</h2><br/>
-          <div class="row">
-            <div class="col-sm-4 crop">
-            <a href="http://www.ydsuk.org" target="_blank">
-              <img src="images/YDSUK1.jpg" alt="YDS" class="img-responsive margin round-border"/>
-            </a> 
-            </div>
-            <div class="col-sm-4 crop">
-            <a href="http://www.gmmcedu.com" target="_blank">
-              <img src="images/gmmcedu.jpg" alt="gmmcedu" class="img-responsive margin round-border"/>
-            </a>  
-            </div>
-            <div class="col-sm-4 crop">
-            <a href="http://www.vimlesh.tk/" target="_blank">
-              <img src="images/maths.jpg" alt="Maths Practise" class="img-responsive margin round-border"/>
-            </a>  
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 crop">
-            <a href="http://www.memostra.com" target="_blank">
-              <img src="images/memostra.jpg" alt="memostra" class="img-responsive margin round-border"/>
-            </a> 
-            </div>
-            <div class="col-sm-4 crop">
-            <a href="http://www.infonexsolutions.co.uk" target="_blank">
-              <img src="images/InfonexSolution.jpg" alt="InfonexSolution" class="img-responsive margin round-border"/>
-            </a> 
-            </div>
-            <div class="col-sm-4 crop">
-            <a href="http://www.train2secure.co.uk" target="_blank">
-              <img src="images/Train2Secure.jpg" alt="Train2Secure" class="img-responsive margin round-border"/>
-            </a>  
-            </div>
+          <div>
+            <a href="aboutMe.html" class="text-heading">More about me</a>
           </div>
         </div>
-        </main>
-        <!-- Footer -->
-        <footer class="container-fluid bg-4 text-center">
-          <a href="#myPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-          </a>
-          <p> Made By <a href={{person.webSite}}> Vimlesh Singh K
-          </a>
-        </p>
-      </footer>
-    </body>
-  </html>
+      </section>
+      <div id="clear">
+      </div>
+      <hr/>
+      <!-- Image Container (Grid) -->
+      <div class="container-fluid">
+        <h2 class="margin text-center text-shadow neo-effect">SOME OF MY WORKS</h2><br/>
+        <div class="row">
+          <div class="col-sm-4 crop">
+          <a href="http://www.ydsuk.org" target="_blank">
+            <img src="images/YDSUK1.jpg" alt="YDS" class="img-responsive margin round-border"/>
+          </a> 
+          </div>
+          <div class="col-sm-4 crop">
+          <a href="http://www.gmmcedu.com" target="_blank">
+            <img src="images/gmmcedu.jpg" alt="gmmcedu" class="img-responsive margin round-border"/>
+          </a>  
+          </div>
+          <div class="col-sm-4 crop">
+          <a href="http://www.vimlesh.tk/" target="_blank">
+            <img src="images/maths.jpg" alt="Maths Practise" class="img-responsive margin round-border"/>
+          </a>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 crop">
+          <a href="http://www.memostra.com" target="_blank">
+            <img src="images/memostra.jpg" alt="memostra" class="img-responsive margin round-border"/>
+          </a> 
+          </div>
+          <div class="col-sm-4 crop">
+          <a href="http://www.infonexsolutions.co.uk" target="_blank">
+            <img src="images/InfonexSolution.jpg" alt="InfonexSolution" class="img-responsive margin round-border"/>
+          </a> 
+          </div>
+          <div class="col-sm-4 crop">
+          <a href="http://www.train2secure.co.uk" target="_blank">
+            <img src="images/Train2Secure.jpg" alt="Train2Secure" class="img-responsive margin round-border"/>
+          </a>  
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p> Made By <a href={{person.webSite}}> Vimlesh Singh K</a>
+      </p>
+    </footer>
+  </body>
+</html>

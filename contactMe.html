@@ -19,11 +19,13 @@
     <script src="script/jQuery.js"></script>
     <script src="script/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image" href={{person.avatar}}/>
+    <link rel="shortcut icon" type="image" href={{person.avatar}}>
   </head>
   <body id="myPage" onload="changeBgColor()">
-    <label for="bg-color">Choose the Background color</label>
-    <input id="bg-color" type="color" value="#9CE7D3" onchange="selectedColor()" />
+    <div id="background-control">
+      <label for="bg-color">Choose the Background color</label>
+      <input id="bg-color" type="color" value="#9CE7D3" onchange="selectedColor()" /> 
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-default">
       <div class="container">
@@ -46,22 +48,28 @@
       </div>
     </nav>
     <main class="container">
-    <div class="textcontent">
-      <div id="text">
-      <p class="h1">Thinking of creating a website for your business get in touch...!!!</p>
-        <p>Contact Email : <a target="_top" style="color: rgb(51, 51, 51);" href="mailto:{{person.email}}">{{person.email}}</a></p>
-        <p>Contact Phone : <a href="tel:{{person.mobile}}">{{person.mobile}}</a></p>
-        <p>Connect on : <a target="_blank" href="{{person.social[0].link}}"><img ng-src= {{person.social[0].icon}} /><img style="width: 25px; height: 25px;" ng-src= {{person.avatar}} /></a></p>
+      <div class="textcontent">
+        <div id="text">
+          <p class="h1">Thinking of creating a website for your business get in touch...!!!</p>
+          <p>Contact Email : <a target="_top" style="color: rgb(51, 51, 51);" href="mailto:{{person.email}}">{{person.email}}</a></p>
+          <p>Contact Phone : <a href="tel:{{person.mobile}}">{{person.mobile}}</a></p>
+          <p>Connect on : <a target="_blank" href="{{person.social[0].link}}"><img ng-src= {{person.social[0].icon}} /><img style="width: 25px; height: 25px;" ng-src= {{person.avatar}} /></a></p>
+        </div>
       </div>
-    </div>
-    <div id="clear"></div><br/><hr/>
-    <div id="recentwork"> <h2>Recent Work</h2>
-    <a target="_blank" href="http://www.ydsuk.org">
-    <img src="images/YDSUK1.jpg" alt="YDS" class="img-responsive margin round-border"/>
-    </a></div><span>Yogi Divine Society (UK) is a social and cultural charity. I build their website using HTML5 with CSS3 &amp; JavaScript. Currently I am maintaining their website using Content Management System (Metronic).</span> <h3>Key Responsibilities</h3> <span>•   Web Creation.</span><br /> <span>•   Implementation and Development of the website.</span><br /> <span>•   Maintaining website - updating YDS(UK) upcoming events and activities.</span><br />
-      <span><a href="portfolio.html">View more of my work</a></span>
-    </div>
-    <div id="clear"></div>
+      <div id="clear"></div><br /><hr />
+      <div id="recentwork">
+        <h2>Recent Work</h2>
+        <a target="_blank" href="http://www.ydsuk.org">
+          <img src="images/YDSUK1.jpg" alt="YDS" class="img-responsive margin round-border"/>
+        </a>
+      </div>
+      <div>
+        <span>Yogi Divine Society (UK) is a social and cultural charity. I build their website using HTML5 with CSS3 &amp; JavaScript. Currently I am maintaining their website using Content Management System (Metronic).</span><h3>Key Responsibilities</h3><span>•   Web Creation.</span><br /><span>•   Implementation and Development of the website.</span><br /><span>•   Maintaining website - updating YDS(UK) upcoming events and activities.
+        </span>
+        <br />
+        <div><a href="portfolio.html" class="text-heading">View more of my work</a></div>
+      </div>
+      <div id="clear"></div>
     </main>
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center">
