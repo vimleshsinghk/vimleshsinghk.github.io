@@ -20,6 +20,14 @@
     <script src="script/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image" href={{person.avatar}}>
+    <style type="text/css">
+    .myContainer {
+      display: none;
+    }
+    .activePage {
+      display: block;
+    }
+    </style>
   </head>
   <body id="myPage" onload="changeBgColor()">
     <div id="background-control">
@@ -35,28 +43,31 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand neo-effect" href="aboutMe.html">{{person.firstName}} {{person.lastName}}</a>
+          <a class="navbar-brand neo-effect myLinkBtn" rel = "myContainer3" href="#">{{person.firstName}} {{person.lastName}}</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">HOME</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="aboutMe.html">ABOUT ME</a></li>
-            <li><a href="contactMe.html">CONTACT ME</a></li>
+            <li rel = "myContainer1" class="active"><a href="#">HOME</a></li>
+            <li rel = "myContainer2"><a href="#">PORTFOLIO</a></li>
+            <li rel = "myContainer3"><a href="#">ABOUT ME</a></li>
+            <li rel = "myContainer4"><a href="#">CONTACT ME</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- main -->
+
     <main>
-      <section class="textcontent">
-        <div id="text">
-          <p>I'm Vimlesh, a Front End Web Developer living in London...
-          </p>
-          <p>With over 1 year of experience, I have been part of the design and development projects for few exceptional companies during this period.
-          </p>
-          <p>I am currently seeking a role as a <i style="color:{{mycolor}}">Front End Web Developer</i>.
-          </p>
+    <!-- HOME PAGE START -->
+      <div class="myContainer activePage" id="myContainer1">
+        <section class="textcontent">
+          <div id="text">
+            <p>I'm Vimlesh, a Front End Web Developer living in London...
+            </p>
+            <p>With over 1 year of experience, I have been part of the design and development projects for few exceptional companies during this period.
+            </p>
+            <p>I am currently seeking a role as a <i style="color:{{mycolor}}">Front End Web Developer</i>.
+            </p>
+          </div>
           <div id="quotes">
             <p style="color:{{mycolor}}" class="neo-effect">"Everything should be made as simple as possible, but no simpler."
             </p>
@@ -64,52 +75,224 @@
             </p>
           </div>
           <div>
-            <a href="aboutMe.html" class="text-heading">More about me</a>
+            <a href="#" rel = "myContainer3" class="text-heading myLinkBtn">More about me</a>
+          </div>
+        </section>
+        <div id="clear">
+        </div>
+        <hr/>
+        <!-- Image Container (Grid) -->
+        <div class="container-fluid">
+          <h2 class="margin text-center text-shadow neo-effect">SOME OF MY WORKS</h2><br/>
+          <div class="row">
+            <div class="col-sm-4 crop">
+              <a href="http://www.ydsuk.org" target="_blank">
+                <img src="images/YDSUK1.jpg" alt="YDS" class="img-responsive margin round-border"/>
+              </a> 
+            </div>
+            <div class="col-sm-4 crop">
+              <a href="http://www.gmmcedu.com" target="_blank">
+                <img src="images/gmmcedu.jpg" alt="gmmcedu" class="img-responsive margin round-border"/>
+              </a>  
+            </div>
+            <div class="col-sm-4 crop">
+              <a href="http://www.vimlesh.tk/" target="_blank">
+                <img src="images/maths.jpg" alt="Maths Practise" class="img-responsive margin round-border"/>
+              </a>  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 crop">
+              <a href="http://www.memostra.com" target="_blank">
+                <img src="images/memostra.jpg" alt="memostra" class="img-responsive margin round-border"/>
+              </a> 
+            </div>
+            <div class="col-sm-4 crop">
+              <a href="http://www.infonexsolutions.co.uk" target="_blank">
+                <img src="images/InfonexSolution.jpg" alt="InfonexSolution" class="img-responsive margin round-border"/>
+              </a> 
+            </div>
+            <div class="col-sm-4 crop">
+              <a href="http://www.train2secure.co.uk" target="_blank">
+                <img src="images/Train2Secure.jpg" alt="Train2Secure" class="img-responsive margin round-border"/>
+              </a>  
+            </div>
           </div>
         </div>
-      </section>
-      <div id="clear">
       </div>
-      <hr/>
-      <!-- Image Container (Grid) -->
-      <div class="container-fluid">
-        <h2 class="margin text-center text-shadow neo-effect">SOME OF MY WORKS</h2><br/>
-        <div class="row">
-          <div class="col-sm-4 crop">
-          <a href="http://www.ydsuk.org" target="_blank">
+    <!-- HOME PAGE ENDS -->
+
+    <!-- PORTFOLIO PAGE START -->
+      <div class="myContainer" id="myContainer2">
+        <!-- First Container -->
+        <div class="container">
+          <br/>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <a href="http://www.gmmcedu.com/" target="_blank">
+                  <img src="images/gmmcedu.jpg" alt="gmmcedu" style ="width:80%; height:auto;">
+                </a>
+               </div>
+              <div class="item">
+                <a href="http://www.vimlesh.tk/" target="_blank">
+                  <img src="images/maths.jpg" alt="Maths Practise" style ="width:80%; height:auto;">
+                </a>
+              </div>
+              <div class="item">
+                <a href="http://www.ydsuk.org/" target="_blank">
+                  <img src="images/YDSUK1.jpg" alt="YDS" style ="width:80%; height:auto;">
+                </a>
+              </div>
+              <div class="item">
+                <a href="http://www.memostra.com/" target="_blank">
+                  <img src="images/memostra.jpg" alt="memostra" style ="width:80%; height:auto;">
+                </a>
+              </div>
+              <div class="item">
+                <a href="http://www.infonexsolutions.co.uk/" target="_blank">
+                  <img src="images/InfonexSolution.jpg" alt="InfonexSolution" style ="width:80%; height:auto;">
+                </a>
+              </div>
+              <div class="item">
+                <a href="http://www.train2secure.co.uk/" target="_blank">
+                  <img src="images/Train2Secure.jpg" alt="Train2Secure" style ="width:80%; height:auto;">
+                </a>
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control imp-color" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control imp-color" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <hr/>
+        </div>
+        <!-- Second Container -->
+        <!-- Image Container (Grid) -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 crop">
+              <a href="http://www.ydsuk.org" target="_blank">
+                <img src="images/YDSUK1.jpg" alt="YDS" class="img-responsive margin round-border"/>
+              </a> 
+            </div>
+            <div class="col-sm-4 crop">
+              <a href="http://www.gmmcedu.com" target="_blank">
+                <img src="images/gmmcedu.jpg" alt="gmmcedu" class="img-responsive margin round-border"/>
+              </a>  
+            </div>
+            <div class="col-sm-4 crop">
+              <a href="http://www.vimlesh.tk/" target="_blank">
+                <img src="images/maths.jpg" alt="Maths Practise" class="img-responsive margin round-border"/>
+              </a>  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 crop">
+              <a href="http://www.memostra.com" target="_blank">
+                <img src="images/memostra.jpg" alt="memostra" class="img-responsive margin round-border"/>
+              </a> 
+            </div>
+            <div class="col-sm-4 crop">
+              <a href="http://www.infonexsolutions.co.uk" target="_blank">
+                <img src="images/InfonexSolution.jpg" alt="InfonexSolution" class="img-responsive margin round-border"/>
+              </a> 
+            </div>
+            <div class="col-sm-4 crop">
+              <a href="http://www.train2secure.co.uk" target="_blank">
+                <img src="images/Train2Secure.jpg" alt="Train2Secure" class="img-responsive margin round-border"/>
+              </a>  
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- PORTFOLIO PAGE ENDS -->
+
+    <!-- ABOUT ME PAGE START -->
+      <div class="myContainer" id="myContainer3">
+        <div class="contanier">
+          <div class="textcontent">
+            <div id="text">
+              <p class="h1 text-heading">Profile</p>
+              <p>As a Frontend Developer, having more than 1 year experience in Frontend development using Techonolgies like HTML, CSS, JAVASCRIPT
+              Good experience in SDLC (Analysis, Design, Coding, Testing &amp; Maintenance)  of internet web applications using  Web technologies.</p>
+              <p class="h1 text-heading">Technical Skills</p>
+              <p>•   Web – HTML5, CSS3, JavaScript, JQuery, AngularJS</p>
+              <p>•   .NET – Classic ASP, VB.NET, ASP.NET MVC 4</p>
+              <p>•   CMS – Metronic, Drupal, WordPress</p>
+              <p>•   IDE Tools – Visual Studio, .NET Visual Studio, Adobe Dreamweaver, TextPad</p>
+              <p>•   Operating System –Windows 95/ 2000/ Vista/ 2008</p>
+              <p>•   Standards - HTML4.01, XML 1.0/1.1</p>
+              <p class="h1 text-heading">Others</p>
+              <p>•   Ability to work as a team member and independently.</p>
+              <p>•   Ability to perform in a fast-paced agile environment.</p>
+              <p>•   Ability to manage and deliver on multiple concurrent project tasks. </p>
+              <p>•   Strong analytical and problem solving with excellent verbal communication and client interacting skills.</p>
+              <p class="h1 text-heading">Qualifications (Academic/Professional)</p>
+              <p>•   Advance Diploma in Computer Networks</p>
+              <p>•   Certificate in Web Computing (HTML , Microsoft SQL Server , Java Programming)</p>
+              <p>•   Bachelors of Engineering (Electrical)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- ABOUT ME PAGE ENDS -->
+
+    <!-- CONTACT ME PAGE START -->
+      <div class="container myContainer" id="myContainer4">
+        <div class="textcontent">
+          <div id="text">
+            <p class="h1">Thinking of creating a website for your business get in touch...!!!</p>
+            <p>Contact Email : <a target="_top" style="color: rgb(51, 51, 51);" href="mailto:{{person.email}}">{{person.email}}</a></p>
+            <p>Contact Phone : <a href="tel:{{person.mobile}}">{{person.mobile}}</a></p>
+            <p>Connect on : <a target="_blank" href="{{person.social[0].link}}"><img ng-src= {{person.social[0].icon}} /><img style="width: 25px; height: 25px;" ng-src= {{person.avatar}} /></a></p>
+          </div>
+        </div>
+        <div id="clear">
+          
+        </div>
+        <br />
+        <hr />
+        <div id="recentwork">
+          <h2>Recent Work</h2>
+          <a target="_blank" href="http://www.ydsuk.org">
             <img src="images/YDSUK1.jpg" alt="YDS" class="img-responsive margin round-border"/>
-          </a> 
-          </div>
-          <div class="col-sm-4 crop">
-          <a href="http://www.gmmcedu.com" target="_blank">
-            <img src="images/gmmcedu.jpg" alt="gmmcedu" class="img-responsive margin round-border"/>
-          </a>  
-          </div>
-          <div class="col-sm-4 crop">
-          <a href="http://www.vimlesh.tk/" target="_blank">
-            <img src="images/maths.jpg" alt="Maths Practise" class="img-responsive margin round-border"/>
-          </a>  
+          </a>
+        </div>
+        <div class="textcontent">
+          <span>Yogi Divine Society (UK) is a social and cultural charity. I build their website using HTML5 with CSS3 &amp; JavaScript. Currently I am maintaining their website using Content Management System (Metronic).
+          </span><h3>Key Responsibilities</h3><span>•   Web Creation.</span><br /><span>•   Implementation and Development of the website.</span><br /><span>•   Maintaining website - updating YDS(UK) upcoming events and activities.
+          </span>
+          <br />
+          <div>
+            <a href="#" rel = "myContainer2" class="text-heading myLinkBtn">View more of my work
+            </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4 crop">
-          <a href="http://www.memostra.com" target="_blank">
-            <img src="images/memostra.jpg" alt="memostra" class="img-responsive margin round-border"/>
-          </a> 
-          </div>
-          <div class="col-sm-4 crop">
-          <a href="http://www.infonexsolutions.co.uk" target="_blank">
-            <img src="images/InfonexSolution.jpg" alt="InfonexSolution" class="img-responsive margin round-border"/>
-          </a> 
-          </div>
-          <div class="col-sm-4 crop">
-          <a href="http://www.train2secure.co.uk" target="_blank">
-            <img src="images/Train2Secure.jpg" alt="Train2Secure" class="img-responsive margin round-border"/>
-          </a>  
-          </div>
+        <div id="clear">
+        
         </div>
       </div>
+    <!-- CONTACT ME PAGE ENDS -->
     </main>
+
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center">
       <a href="#myPage" title="To Top">
